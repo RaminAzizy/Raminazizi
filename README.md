@@ -177,7 +177,7 @@
 
     <section id="home" class="hero">
         <div>
-            <img src="profile.jpg" alt="Profile Photo" class="profile-image">
+            <img src="2.png" alt="Profile Photo" class="profile-image">
             <h1>John Doe</h1>
             <p>Electronics Engineer & Software Developer</p>
         </div>
@@ -187,7 +187,7 @@
         <h2 style="text-align: center; margin-bottom: 2rem;">Featured Projects</h2>
         <div class="project-grid">
             <div class="project-card">
-                <img src="project1.jpg" alt="Smart Home System" class="project-image">
+                <img src="2.png" alt="Smart Home System" class="project-image">
                 <div class="project-content">
                     <h3>Smart Home Automation</h3>
                     <p>IoT-based home automation system using ESP32 and custom PCB design</p>
