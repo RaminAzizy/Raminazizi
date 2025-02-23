@@ -1,8 +1,8 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Electronics & Programming Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -23,11 +23,12 @@
             line-height: 1.6;
             color: var(--text-color);
             background-color: var(--primary-color);
+            overflow-x: hidden;
         }
 
         .nav {
             background: rgba(0, 0, 0, 0.9);
-            padding: 1.5rem;
+            padding: 1rem;
             position: fixed;
             width: 100%;
             top: 0;
@@ -39,7 +40,8 @@
             display: flex;
             justify-content: center;
             list-style: none;
-            gap: 2rem;
+            gap: 1rem;
+            flex-wrap: wrap;
         }
 
         .nav a {
@@ -47,48 +49,38 @@
             text-decoration: none;
             font-weight: bold;
             transition: all 0.3s;
-            padding: 0.5rem 1rem;
-            border: 2px solid transparent;
-        }
-
-        .nav a:hover {
-            border-bottom-color: var(--accent-color);
+            padding: 0.5rem;
+            font-size: 0.9rem;
+            white-space: nowrap;
         }
 
         .hero {
-            height: 80vh;
+            min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
-            padding-top: 80px;
-        }
-        .hero1 {
-            height: auto;
-            padding: 4rem 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: left;
-            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
-            padding-top: 80px;
+            padding: 4rem 1rem 2rem;
         }
 
-        
+        .about-section {
+            padding: 4rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
         .profile-image {
-            width: 250px;
-            height: 250px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             border: 5px solid var(--accent-color);
             box-shadow: 0 0 30px var(--accent-color);
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             object-fit: cover;
         }
 
         .projects {
-            padding: 4rem 2rem;
+            padding: 2rem 1rem;
             background: #111111;
         }
 
@@ -99,59 +91,51 @@
 
         .project-card {
             display: flex;
-            gap: 2rem;
-            align-items: center;
-            margin: 3rem 0;
-            padding: 2rem;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 2rem 0;
+            padding: 1.5rem;
             background: rgba(255, 215, 0, 0.1);
             border-radius: 15px;
         }
 
-        .project-card:nth-child(even) {
-            flex-direction: row-reverse;
-        }
-
         .project-image {
-            width: 50%;
+            width: 100%;
             border-radius: 10px;
             border: 2px solid var(--accent-color);
-            transition: transform 0.3s;
         }
 
-        .project-image:hover {
-            transform: scale(1.03);
+        .golden-box {
+            border: 2px solid #FFD700;
+            border-radius: 10px;
+            padding: 1rem;
+            margin: 2rem auto;
+            max-width: 95%;
+            text-align: center;
         }
-
-        .project-content {
-            width: 50%;
-
-
-
-        }
-              
-</section>
 
         .skills {
-            padding: 4rem 2rem;
+            padding: 2rem 1rem;
             text-align: center;
         }
 
         .skill-icons {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            gap: 1.5rem;
             max-width: 800px;
-            margin: 2rem auto;
+            margin: 1rem auto;
+            padding: 0 1rem;
         }
 
         .skill-icon {
-            font-size: 3rem;
+            font-size: 2rem;
             color: var(--accent-color);
-            padding: 1rem;
+            padding: 0.5rem;
             border: 2px solid var(--accent-color);
             border-radius: 50%;
-            width: 100px;
-            height: 100px;
+            width: 70px;
+            height: 70px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -161,23 +145,42 @@
         footer {
             background: rgba(0, 0, 0, 0.9);
             text-align: center;
-            padding: 2rem;
-            backdrop-filter: blur(10px);
+            padding: 1.5rem;
         }
 
-        @media (max-width: 768px) {
+        @media (min-width: 768px) {
             .project-card {
-                flex-direction: column;
-                padding: 1rem;
+                flex-direction: row;
+                padding: 2rem;
             }
             
             .project-card:nth-child(even) {
-                flex-direction: column;
+                flex-direction: row-reverse;
             }
 
-            .project-image,
-            .project-content {
-                width: 100%;
+            .project-image {
+                width: 50%;
+            }
+
+            .profile-image {
+                width: 250px;
+                height: 250px;
+            }
+
+            .nav a {
+                font-size: 1rem;
+                padding: 0.5rem 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 1.6rem; }
+            h2 { font-size: 1.4rem; }
+            p { font-size: 0.9rem; }
+            
+            .golden-box {
+                padding: 1rem;
+                font-size: 0.95rem;
             }
         }
     </style>
@@ -201,69 +204,32 @@
         </div>
     </section>
 
-    <section id="home" class="hero1" >
-        <div>
-            
-            <h1>ABOUT ME   </h1>
-            <p>As a Mechatronics Engineer specializing in microcontroller programming</p>
-            <p> I’ve spent 2+ years collaborating freelance with IoT startups and tech</p>
-            <p> companies. My expertise lies in developing **embedded systems** and </p>
-            <p> integrating sensors with platforms like Arduino, ARM, Raspberry Pi,</p>
-            <p> and Jetson Nano.</p>
-            
-            <h1>Key Skills: </h1> 
-            <p>  - Advanced **Python** & **C++** programming</p>  
-            <p>  - Environmental/industrial sensor deployment (temperature, humidity, motion)  </p>
-            <p>  - Full-stack IoT development (hardware + software integration)  </p>
-            <p>  - Custom PCB design for robotic applications </p>
-            
-            <h1>Education & Awards </h1>  
-            <p>   - M.Sc. in Mechatronics, **Shahid Beheshti University** </p> 
-            <p>  - **2nd Place**, Nowshirvani Babol Robotics Competition  </p>
-            <p>  - Industrial automation projects (see portfolio for details) </p> 
-            
-            
-            
-          
-          <div style="border: 2px solid #FFD700; border-radius: 10px;
-                      padding: 20px;max-width: 600px;margin: 0 auto;
-                      text-align: center;font-size: 18px;line-height: 1.5;">
-          <h5 style="color: #FFD700;margin: 0;padding: 10px;">
-                     I’m deeply passionate about cutting-edge robotics and<br>
-                     spend my free time building open-source<br>
-                    projects focused on AI-driven low-power hardware. </h5>
-          </div>
-          
-          
-          
-          
-          
-          
-          
+    <section class="about-section">
+        <h2>ABOUT ME</h2>
+        <p>As a Mechatronics Engineer specializing in microcontroller programming, I’ve spent 2+ years collaborating freelance with IoT startups and tech companies. My expertise lies in developing embedded systems and integrating sensors with platforms like Arduino, ARM, Raspberry Pi, and Jetson Nano.</p>
 
-    
-     
+        <h3>Key Skills:</h3>
+        <ul>
+            <li>Advanced Python & C++ programming</li>
+            <li>Environmental/industrial sensor deployment</li>
+            <li>Full-stack IoT development</li>
+            <li>Custom PCB design for robotic applications</li>
+        </ul>
 
-    <section id="projects" class="projects">
-        <h2 style="text-align: center; margin-bottom: 2rem;">Featured Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <img src="2.png" alt="Smart Home System" class="project-image">
-                <div class="project-content">
-                    <h3>Smart Home Automation</h3>
-                    <p>IoT-based home automation system using ESP32 and custom PCB design</p>
-                    <ul>
-                        <li>Real-time sensor monitoring</li>
-                        <li>Mobile app control</li>
-                        <li>Energy optimization</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Add 3 more project cards following the same structure -->
+        <h3>Education & Awards</h3>
+        <ul>
+            <li>M.Sc. in Mechatronics, Shahid Beheshti University</li>
+            <li>2nd Place, Nowshirvani Babol Robotics Competition</li>
+            <li>Industrial automation projects</li>
+        </ul>
+
+        <div class="golden-box">
+            <p>I’m deeply passionate about cutting-edge robotics and spend my free time building open-source projects focused on AI-driven low-power hardware.</p>
         </div>
     </section>
-     <section id="projects1" class="projects">
-        <h2 style="text-align: center; margin-bottom: 2rem;">Featured Projects</h2>
+
+    <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
         <div class="project-grid">
             <div class="project-card">
                 <img src="2.png" alt="Smart Home System" class="project-image">
@@ -277,7 +243,7 @@
                     </ul>
                 </div>
             </div>
-            <!-- Add 3 more project cards following the same structure -->
+            <!-- Add more project cards -->
         </div>
     </section>
 
@@ -297,7 +263,6 @@
     </footer>
 
     <script>
-        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
