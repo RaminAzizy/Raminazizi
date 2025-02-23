@@ -183,8 +183,9 @@
     <section id="home" class="hero">
         <div>
             <img src="photo17261967853.jpg" alt="Profile Photo" class="profile-image">
-            <h1>John Doe</h1>
-            <p>Electronics Engineer & Software Developer</p>
+            <h1>Ramin Azizy</h1>
+            <p>Mechatronics Engineer | Embedded Hardware Developer</p>
+            <p>"Turning electronic ideas into smart solutions"</p>
         </div>
     </section>
 
