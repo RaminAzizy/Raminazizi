@@ -115,41 +115,6 @@
 
 
 
-        <!-- Project 1 - Image Left (Default) -->
-<div class="project-card">
-    <img src="project1.jpg" alt="Project 1" class="project-image">
-    <div class="project-content">
-        <h3>Project Title 1</h3>
-        <p>Project description...</p>
-    </div>
-</div>
-
-<!-- Project 2 - Image Right (Auto-reversed) -->
-<div class="project-card">
-    <img src="project2.jpg" alt="Project 2" class="project-image">
-    <div class="project-content">
-        <h3>Project Title 2</h3>
-        <p>Project description...</p>
-    </div>
-</div>
-
-<!-- Project 3 - Image Left (Auto-default) -->
-<div class="project-card">
-    <img src="project3.jpg" alt="Project 3" class="project-image">
-    <div class="project-content">
-        <h3>Project Title 3</h3>
-        <p>Project description...</p>
-    </div>
-</div>
-
-<!-- Project 4 - Image Right (Auto-reversed) -->
-<div class="project-card">
-    <img src="project4.jpg" alt="Project 4" class="project-image">
-    <div class="project-content">
-        <h3>Project Title 4</h3>
-        <p>Project description...</p>
-    </div>
-</div>
         }
               
 </section>
@@ -224,6 +189,24 @@
     </section>
 
     <section id="projects" class="projects">
+        <h2 style="text-align: center; margin-bottom: 2rem;">Featured Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="2.png" alt="Smart Home System" class="project-image">
+                <div class="project-content">
+                    <h3>Smart Home Automation</h3>
+                    <p>IoT-based home automation system using ESP32 and custom PCB design</p>
+                    <ul>
+                        <li>Real-time sensor monitoring</li>
+                        <li>Mobile app control</li>
+                        <li>Energy optimization</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Add 3 more project cards following the same structure -->
+        </div>
+    </section>
+     <section id="projects1" class="projects">
         <h2 style="text-align: center; margin-bottom: 2rem;">Featured Projects</h2>
         <div class="project-grid">
             <div class="project-card">
