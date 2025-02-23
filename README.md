@@ -56,7 +56,7 @@
         }
 
         .hero {
-            height: 100vh;
+            height: 80vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -64,6 +64,17 @@
             background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
             padding-top: 80px;
         }
+        .hero1 {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+            padding-top: 80px;
+        }
+
+        
 
         .profile-image {
             width: 250px;
@@ -189,14 +200,55 @@
         </div>
     </section>
 
-    <section id="home" class="hero">
+    <section id="home" class="hero1" >
         <div>
             
+            <h1>-------------------------------------------------------------------
             <h1>ABOUT ME                                                                                                </h1>
-            <p>Mechatronics Engineer | Embedded Hardware Developer</p>
-            <p>"Turning electronic ideas into smart solutions"</p>
+            <p>As a Mechatronics Engineer specializing in microcontroller programming</p>
+            <p> I’ve spent 2+ years collaborating freelance with IoT startups and tech</p>
+            <p> companies. My expertise lies in developing **embedded systems** and </p>
+            <p> integrating sensors with platforms like Arduino, ARM, Raspberry Pi,</p>
+            <p> and Jetson Nano.</p>
+            
+            <h1>Key Skills: </h1> 
+            <p>  - Advanced **Python** & **C++** programming</p>  
+            <p>  - Environmental/industrial sensor deployment (temperature, humidity, motion)  </p>
+            <p>  - Full-stack IoT development (hardware + software integration)  </p>
+            <p>  - Custom PCB design for robotic applications </p>
+            
+            <h1>Education & Awards </h1>  
+            <p>   - M.Sc. in Mechatronics, **Shahid Beheshti University** </p> 
+            <p>  - **2nd Place**, Nowshirvani Babol Robotics Competition  </p>
+            <p>  - Industrial automation projects (see portfolio for details) </p> 
+            
+            <h1>-------------------------------------------------------------------</h1>
+            
+            
+          
+          <div style="border: 2px solid #FFD700; border-radius: 10px;
+                      padding: 20px;max-width: 600px;margin: 0 auto;
+                      text-align: center;font-size: 18px;line-height: 1.5;">
+          <h5 style="color: #FFD700;margin: 0;padding: 10px;">
+                     I’m deeply passionate about cutting-edge robotics and<br>
+                     spend my free time building open-source<br>
+                    projects focused on AI-driven low-power hardware. </h5>
+          </div>
+          
+          
+          
+          
+          
+          
+          
+</div>
+
+            
+            
         </div>
     </section>
+    
+     
 
     <section id="projects" class="projects">
         <h2 style="text-align: center; margin-bottom: 2rem;">Featured Projects</h2>
