@@ -112,23 +112,46 @@
 
         .project-content {
             width: 50%;
-        }
-                <!-- Project 2 (Reversed) -->
-        <div class="project-card">
-            <div class="project-content">
-                <h3>Industrial Control System</h3>
-                <p>PLC-based automation system with HMI interface</p>
-                <ul>
-                    <li>Modbus communication protocol</li>
-                    <li>SCADA system integration</li>
-                    <li>Safety circuit design</li>
-                </ul>
-            </div>
-            <img src="project2.jpg" alt="Industrial Control" class="project-image">
-        </div>
 
-        <!-- Add more projects following the pattern -->
+
+
+        <!-- Project 1 - Image Left (Default) -->
+<div class="project-card">
+    <img src="project1.jpg" alt="Project 1" class="project-image">
+    <div class="project-content">
+        <h3>Project Title 1</h3>
+        <p>Project description...</p>
     </div>
+</div>
+
+<!-- Project 2 - Image Right (Auto-reversed) -->
+<div class="project-card">
+    <img src="project2.jpg" alt="Project 2" class="project-image">
+    <div class="project-content">
+        <h3>Project Title 2</h3>
+        <p>Project description...</p>
+    </div>
+</div>
+
+<!-- Project 3 - Image Left (Auto-default) -->
+<div class="project-card">
+    <img src="project3.jpg" alt="Project 3" class="project-image">
+    <div class="project-content">
+        <h3>Project Title 3</h3>
+        <p>Project description...</p>
+    </div>
+</div>
+
+<!-- Project 4 - Image Right (Auto-reversed) -->
+<div class="project-card">
+    <img src="project4.jpg" alt="Project 4" class="project-image">
+    <div class="project-content">
+        <h3>Project Title 4</h3>
+        <p>Project description...</p>
+    </div>
+</div>
+        }
+              
 </section>
 
         .skills {
