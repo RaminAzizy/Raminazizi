@@ -113,6 +113,23 @@
         .project-content {
             width: 50%;
         }
+                <!-- Project 2 (Reversed) -->
+        <div class="project-card">
+            <div class="project-content">
+                <h3>Industrial Control System</h3>
+                <p>PLC-based automation system with HMI interface</p>
+                <ul>
+                    <li>Modbus communication protocol</li>
+                    <li>SCADA system integration</li>
+                    <li>Safety circuit design</li>
+                </ul>
+            </div>
+            <img src="project2.jpg" alt="Industrial Control" class="project-image">
+        </div>
+
+        <!-- Add more projects following the pattern -->
+    </div>
+</section>
 
         .skills {
             padding: 4rem 2rem;
