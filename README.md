@@ -182,7 +182,7 @@
 
     <section id="home" class="hero">
         <div>
-            <img src="2.png" alt="Profile Photo" class="profile-image">
+            <img src="photo17261967853.jpg" alt="Profile Photo" class="profile-image">
             <h1>John Doe</h1>
             <p>Electronics Engineer & Software Developer</p>
         </div>
