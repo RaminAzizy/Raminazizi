@@ -65,7 +65,7 @@
             padding-top: 80px;
         }
         .hero1 {
-            height: 250vh;
+            height: 280vh;
             display: flex;
             align-items: center;
             justify-content: center;
