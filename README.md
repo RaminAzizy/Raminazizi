@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -65,7 +65,7 @@
             padding-top: 80px;
         }
         .hero1 {
-            height: 100vh;
+            height: 600vh;
             display: flex;
             align-items: center;
             justify-content: center;
