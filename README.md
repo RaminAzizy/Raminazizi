@@ -189,6 +189,15 @@
         </div>
     </section>
 
+    <section id="home" class="hero">
+        <div>
+            
+            <h1>ABOUT ME                                                                                                </h1>
+            <p>Mechatronics Engineer | Embedded Hardware Developer</p>
+            <p>"Turning electronic ideas into smart solutions"</p>
+        </div>
+    </section>
+
     <section id="projects" class="projects">
         <h2 style="text-align: center; margin-bottom: 2rem;">Featured Projects</h2>
         <div class="project-grid">
