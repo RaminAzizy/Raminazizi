@@ -65,7 +65,7 @@
             padding-top: 80px;
         }
         .hero1 {
-            height: 200vh;
+            height: 250vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -203,8 +203,7 @@
     <section id="home" class="hero1" >
         <div>
             
-            <h1>-------------------------------------------------------------------
-            <h1>ABOUT ME                                                                                                </h1>
+            <h1>ABOUT ME   </h1>
             <p>As a Mechatronics Engineer specializing in microcontroller programming</p>
             <p> I’ve spent 2+ years collaborating freelance with IoT startups and tech</p>
             <p> companies. My expertise lies in developing **embedded systems** and </p>
@@ -222,7 +221,6 @@
             <p>  - **2nd Place**, Nowshirvani Babol Robotics Competition  </p>
             <p>  - Industrial automation projects (see portfolio for details) </p> 
             
-            <h1>-------------------------------------------------------------------</h1>
             
             
           
@@ -241,12 +239,7 @@
           
           
           
-</div>
 
-            
-            
-        </div>
-    </section>
     
      
 
