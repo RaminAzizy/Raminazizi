@@ -42,7 +42,7 @@
     <h1>My Portfolio</h1>
     <div class="gallery">
         <img src="[2](https://github.com/user-attachments/assets/fae33624-b085-4360-a142-ec0637636c4d)" alt="Project 1">
-        <img src="2.jpg" alt="Project 2">
+        <img src="2.png" alt="Project 2">
         <img src="sample3.jpg" alt="Project 3">
         <img src="sample4.jpg" alt="Project 4">
     </div>
