@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -247,6 +246,24 @@
         </div>
     </section>
 
+    <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="photo17261966816.jpg" alt="Autonomous Vehicle Project" class="project-image">
+                <div class="project-content">
+                    <h3>Smart Home Automation</h3>
+                    <p>The AI-Powered Autonomous Vehicle with Computer Vision project implements cutting-edge embedded technologies. Utilizing an NVIDIA Jetson Nano (Linux OS) paired with an HD camera, the system achieves 30 FPS real-time obstacle detection through Convolutional Neural Network (CNN) algorithms. Precision-controlled 12V DC motors and servos (±0.5° accuracy) are integrated with IoT protocols like MQTT/WebSocket for instantaneous data transmission. A GPS navigation module (1.5m accuracy) enables dynamic path planning by fusing visual data with geospatial coordinates. The web-based interface allows seamless switching between manual/autonomous modes, while a 20000mAh Li-ion battery ensures extended operational efficiency.</p>
+                    <ul>
+                        <li>Real-time sensor monitoring</li>
+                        <li>Mobile app control</li>
+                        <li>Energy optimization</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Add more project cards -->
+        </div>
+    </section>
     <section id="skills" class="skills">
         <h2>Technical Skills</h2>
         <div class="skill-icons">
