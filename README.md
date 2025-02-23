@@ -3,108 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Electronics & Programming Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        :root {
+            --primary-color: #000000;
+            --accent-color: #FFD700;
+            --text-color: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
-            background-color: #111;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--primary-color);
         }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-        .project {
-            position: relative;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.5);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .project:hover {
-            transform: scale(1.05);
-            box-shadow: 0px 6px 15px rgba(255, 215, 0, 0.7);
-        }
-        .project img {
+
+        .nav {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 1.5rem;
+            position: fixed;
             width: 100%;
-            height: auto;
-            border-radius: 10px;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
         }
-        .project-title {
-            font-size: 1.2em;
-            margin-top: 10px;
+
+        .nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav a {
+            color: var(--accent-color);
+            text-decoration: none;
             font-weight: bold;
+            transition: all 0.3s;
+            padding: 0.5rem 1rem;
+            border: 2px solid transparent;
         }
-        .project-description {
-            display: none;
-            position: absolute;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.7);
-            color: white;
-            width: 100%;
-            padding: 10px;
+
+        .nav a:hover {
+            border-bottom-color: var(--accent-color);
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            font-size: 0.9em;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+            padding-top: 80px;
         }
-        .project:hover .project-description {
-            display: block;
+
+        .profile-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 5px solid var(--accent-color);
+            box-shadow: 0 0 30px var(--accent-color);
+            margin-bottom: 2rem;
+            object-fit: cover;
         }
-        h1 {
-            font-size: 2em;
-            margin-bottom: 20px;
-            border-bottom: 2px solid gold;
-            display: inline-block;
-            padding-bottom: 5px;
+
+        .projects {
+            padding: 4rem 2rem;
+            background: #111111;
+        }
+
+        .project-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .project-card {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            margin: 3rem 0;
+            padding: 2rem;
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 15px;
+        }
+
+        .project-card:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .project-image {
+            width: 50%;
+            border-radius: 10px;
+            border: 2px solid var(--accent-color);
+            transition: transform 0.3s;
+        }
+
+        .project-image:hover {
+            transform: scale(1.03);
+        }
+
+        .project-content {
+            width: 50%;
+        }
+
+        .skills {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .skill-icons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 2rem;
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+
+        .skill-icon {
+            font-size: 3rem;
+            color: var(--accent-color);
+            padding: 1rem;
+            border: 2px solid var(--accent-color);
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            text-align: center;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        @media (max-width: 768px) {
+            .project-card {
+                flex-direction: column;
+                padding: 1rem;
+            }
+            
+            .project-card:nth-child(even) {
+                flex-direction: column;
+            }
+
+            .project-image,
+            .project-content {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>My Portfolio</h1>
-    <div class="gallery">
-        <div class="project">
-            <img src="2.png" alt="Project 1">
-            <div class="project-title">Project 1</div>
-            <div class="project-description">Description of Project 1</div>
+    <nav class="nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div>
+            <img src="profile.jpg" alt="Profile Photo" class="profile-image">
+            <h1>John Doe</h1>
+            <p>Electronics Engineer & Software Developer</p>
         </div>
-        <div class="project">
-            <img src="sample2.jpg" alt="Project 2">
-            <div class="project-title">Project 2</div>
-            <div class="project-description">Description of Project 2</div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 style="text-align: center; margin-bottom: 2rem;">Featured Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="project1.jpg" alt="Smart Home System" class="project-image">
+                <div class="project-content">
+                    <h3>Smart Home Automation</h3>
+                    <p>IoT-based home automation system using ESP32 and custom PCB design</p>
+                    <ul>
+                        <li>Real-time sensor monitoring</li>
+                        <li>Mobile app control</li>
+                        <li>Energy optimization</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Add 3 more project cards following the same structure -->
         </div>
-        <div class="project">
-            <img src="sample3.jpg" alt="Project 3">
-            <div class="project-title">Project 3</div>
-            <div class="project-description">Description of Project 3</div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Technical Skills</h2>
+        <div class="skill-icons">
+            <i class="fas fa-microchip skill-icon"></i>
+            <i class="fas fa-code skill-icon"></i>
+            <i class="fas fa-robot skill-icon"></i>
+            <i class="fab fa-python skill-icon"></i>
         </div>
-        <div class="project">
-            <img src="sample4.jpg" alt="Project 4">
-            <div class="project-title">Project 4</div>
-            <div class="project-description">Description of Project 4</div>
-        </div>
-        <div class="project">
-            <img src="sample5.jpg" alt="Project 5">
-            <div class="project-title">Project 5</div>
-            <div class="project-description">Description of Project 5</div>
-        </div>
-        <div class="project">
-            <img src="sample6.jpg" alt="Project 6">
-            <div class="project-title">Project 6</div>
-            <div class="project-description">Description of Project 6</div>
-        </div>
-        <div class="project">
-            <img src="sample7.jpg" alt="Project 7">
-            <div class="project-title">Project 7</div>
-            <div class="project-description">Description of Project 7</div>
-        </div>
-        <div class="project">
-            <img src="sample8.jpg" alt="Project 8">
-            <div class="project-title">Project 8</div>
-            <div class="project-description">Description of Project 8</div>
-        </div>
-    </div>
+    </section>
+
+    <footer id="contact">
+        <p>Contact: example@email.com</p>
+        <p>© 2025 All rights reserved</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
