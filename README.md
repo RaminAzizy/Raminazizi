@@ -428,7 +428,8 @@ body {
 </style>
 
     <footer id="contact">
-        <p>Contact: example@email.com</p>
+        <p>Contact: ramin111azizi@gmail.com</p>
+        <p>Contact: https://www.linkedin.com/in/raminazizy </p>
         <p>© 2025 All rights reserved</p>
     </footer>
 
