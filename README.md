@@ -426,8 +426,10 @@ body {
     font-size: 1.4em;
 }
 </style>
-<p>Contact:</p>
-<p>ramin111azizi@email.com</p>
+ <footer id="contact">
+        <p>Contact: example@email.com</p>
+        <p>© 2025 All rights reserved</p>
+    </footer>
     <footer id="contact">
   <div class="social-links">
   
