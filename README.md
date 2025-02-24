@@ -287,6 +287,27 @@
             <!-- Add more project cards -->
         </div>
     </section>
+
+    <section id="projects" class="projects">
+        
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="fier.png" alt=" Fire Detection System Based on Computer Vision" class="project-image">
+                <div class="project-content">
+                    <h3>Fire Detection System Based on Computer Vision</h3>
+                    <p>This advanced system integrates Convolutional Neural Networks (CNN) with optimized image processing algorithms to detect fire in complex operational conditions. The core architecture utilizes MobileNetV3, enabling deployment on low-cost hardware like Raspberry Pi. Supporting various input sources including USB cameras, IP cameras, and satellite imagery, the system processes 4K resolution at 25 FPS. The AI model, trained on over 50,000 real fire images, detects 5 distinct classes: open flame, dense smoke, sparks, subsurface fire, and false alarms. It operates with 89% accuracy in low-light conditions (0.1 lux) and effectively distinguishes fire movement from other dynamic objects in crowded industrial environments. Key applications include forest monitoring via drones, integration with automated fire suppression systems, and industrial production line surveillance. The system reduces costs by 95% compared to traditional methods and responds in under 0.8 seconds. Compliant with EN54-25 standards and industrial protocols like MODBUS/BACnet, it offers energy-efficient operation below 15W.</p>
+                    <ul>
+                        <li>Uses optical flow analysis to distinguish flame flicker patterns (3-25Hz) from mechanical motion</li>
+                        <li>Implements HSV-space adaptive thresholding to eliminate false positives from reflections</li>
+                        <li>Achieved through hardware-accelerated inference (TensorRT on Edge TPU)</li>
+                        <li>Integrates with PLC systems via OPC UA protocol for automated safety responses</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Add more project cards -->
+        </div>
+    </section>
+    
     <section id="skills" class="skills">
         <h2>Technical Skills</h2>
         <div class="skill-icons">
