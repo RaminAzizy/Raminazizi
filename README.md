@@ -438,7 +438,7 @@ body {
     <a href="https://www.linkedin.com/in/raminazizy/">
       <i class="fab fa-linkedin"></i>
     </a>
-    <a href="mailto:ramin111azizi@email.com">
+    <a href="mailto:ramin111azizi@gmail.com">
       <i class="fas fa-envelope"></i>
     </a>
   </div>
