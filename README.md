@@ -426,10 +426,11 @@ body {
     font-size: 1.4em;
 }
 </style>
-
+<p>Contact:</p>
+<p>ramin111azizi@email.com</p>
     <footer id="contact">
   <div class="social-links">
-  <p>Contact: ramin111azizi@email.com</p>
+  
         
    
     <a href="https://www.linkedin.com/in/raminazizy/">
