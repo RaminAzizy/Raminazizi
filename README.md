@@ -427,8 +427,8 @@ body {
 }
 </style>
  <footer id="contact">
-        <p>Contact: ramin111azizi@email.com</p>
-        <p>© 2025 All rights reserved</p>
+        <p>Contact: x</p>
+        <p>ramin111azizi@email.com</p>
     </footer>
     <footer id="contact">
   <div class="social-links">
