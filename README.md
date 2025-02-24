@@ -318,6 +318,115 @@
         </div>
     </section>
 
+    <section class="study-section">
+    <h2 class="section-title">Active Research Fields</h2>
+    
+    <div class="knowledge-grid">
+        <!-- Sensor Fusion -->
+        <div class="study-card">
+            <div class="study-icon">🚘</div>
+            <h3 class="study-title">Autonomous Vehicle Sensor Fusion</h3>
+            <ul class="study-list">
+                <li>LiDAR-Radar synchronization</li>
+                <li>Advanced Kalman filtering</li>
+                <li>Temporal sensor alignment</li>
+                <li>Data fusion algorithms</li>
+            </ul>
+        </div>
+
+        <!-- IoT Systems -->
+        <div class="study-card">
+            <div class="study-icon">🌐</div>
+            <h3 class="study-title">IoT Architecture</h3>
+            <ul class="study-list">
+                <li>Network security protocols</li>
+                <li>Energy consumption optimization</li>
+                <li>LPWAN communication</li>
+                <li>Edge computing frameworks</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<style>
+:root {
+    --primary: #FFD700; /* Gold */
+    --secondary: #000000; /* Pure Black */
+}
+
+/* اضافه شدن بک‌گراند مشکی کامل */
+body {
+    background: #000 !important;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.study-section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 40px 20px;
+    background: var(--secondary);
+    width: 100%;
+}
+
+.section-title {
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 0.8rem;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.knowledge-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.study-card {
+    background: rgba(0,0,0,0.9);
+    border-radius: 8px;
+    padding: 2rem;
+    border: 1px solid var(--primary);
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.1);
+}
+
+.study-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.3);
+}
+
+.study-title {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.study-list {
+    list-style: none;
+    padding: 0;
+}
+
+.study-list li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.study-list li::before {
+    content: "•";
+    color: var(--primary);
+    font-size: 1.4em;
+}
+</style>
+
     <footer id="contact">
         <p>Contact: example@email.com</p>
         <p>© 2025 All rights reserved</p>
