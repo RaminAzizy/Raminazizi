@@ -233,7 +233,7 @@
             <div class="project-card">
                 <img src="photo17261966816.jpg" alt="Autonomous Vehicle Project" class="project-image">
                 <div class="project-content">
-                    <h3>Smart Home Automation</h3>
+                    <h3> AI-Powered Autonomous Vehicle with Computer Vision</h3>
                     <p>The AI-Powered Autonomous Vehicle with Computer Vision project implements cutting-edge embedded technologies. Utilizing an NVIDIA Jetson Nano (Linux OS) paired with an HD camera, the system achieves 30 FPS real-time obstacle detection through Convolutional Neural Network (CNN) algorithms. Precision-controlled 12V DC motors and servos (±0.5° accuracy) are integrated with IoT protocols like MQTT/WebSocket for instantaneous data transmission. A GPS navigation module (1.5m accuracy) enables dynamic path planning by fusing visual data with geospatial coordinates. The web-based interface allows seamless switching between manual/autonomous modes, while a 20000mAh Li-ion battery ensures extended operational efficiency.</p>
                     <ul>
                         <li>Real-time sensor monitoring</li>
@@ -252,8 +252,8 @@
             <div class="project-card">
                 <img src="photo17261967716.jpg" alt=" Autonomous Maze-Solving Mapping Robot" class="project-image">
                 <div class="project-content">
-                    <h3>Smart Home Automation</h3>
-                    <p>accuracy) for rapid 180°/sec environmental scanning. Utilizing Dijkstra's algorithm or BFS, it identifies shortest paths in mazes with 95% accuracy. Bluetooth 4.0 (HC-05 module) enables real-time control and data transmission within 10m range. Powered by an Arduino Nano (16MHz ATmega328P) and 18650 Li-ion battery (3.7V 3000mAh), it delivers 4+ hours of continuous operation.</p>
+                    <h3>Autonomous Maze-Solving Mapping Robot</h3>
+                    <p>This robot integrates an HC-SR04 ultrasonic sensor (2-400cm range) paired with a 270° servo motor (±2° accuracy) for rapid 180°/sec environmental scanning. Utilizing Dijkstra's algorithm or BFS, it identifies shortest paths in mazes with 95% accuracy. Bluetooth 4.0 (HC-05 module) enables real-time control and data transmission within 10m range. Powered by an Arduino Nano (16MHz ATmega328P) and 18650 Li-ion battery (3.7V 3000mAh), it delivers 4+ hours of continuous operation.</p>
                     <ul>
                         <li>Digital mapping resolution: 15cm/pixel</li>
                         <li>Wall detection error <3cm</li>
