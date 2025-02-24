@@ -265,6 +265,28 @@
             <!-- Add more project cards -->
         </div>
     </section>
+
+    <section id="projects" class="projects">
+        
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="photo17261965558.jpg" alt=" SCARA Robotic Arm with Adaptive Control" class="project-image">
+                <div class="project-content">
+                    <h3>SCARA Robotic Arm with Adaptive Control</h3>
+                    <p>This SCARA arm features an STM32F4 controller running FreeRTOS, driving 4 NEMA23 steppers (2.8N·m) via DM542T drivers. Achieves 120 cycles/min with 0.03mm repeatability using Kalman filter-based motion control. The cross-platform GUI (Python/OpenGL) supports waypoint programming and real-time telemetry visualization.</p>
+                    <ul>
+                        <li>Workspace: 500×400×250mm</li>
+                        <li>Max Acceleration: 3m/s²</li>
+                        <li>Communication: Dual-channel (WiFi 802.11n + RS485)</li>
+                        <li>PID auto-tuning via Ziegler-Nichols method</li>
+                        <li>Vibration damping using IMU feedback</li>
+                        <li>Energy consumption monitoring (<150W peak)</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Add more project cards -->
+        </div>
+    </section>
     <section id="skills" class="skills">
         <h2>Technical Skills</h2>
         <div class="skill-icons">
