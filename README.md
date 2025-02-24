@@ -427,7 +427,7 @@ body {
 }
 </style>
  <footer id="contact">
-        <p>Contact: example@email.com</p>
+        <p>Contact: ramin111azizi@email.com</p>
         <p>© 2025 All rights reserved</p>
     </footer>
     <footer id="contact">
@@ -438,7 +438,7 @@ body {
     <a href="https://www.linkedin.com/in/raminazizy/">
       <i class="fab fa-linkedin"></i>
     </a>
-    <a href="mailto:ramib111azizi@email.com">
+    <a href="mailto:ramin111azizi@email.com">
       <i class="fas fa-envelope"></i>
     </a>
   </div>
