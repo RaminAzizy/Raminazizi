@@ -427,7 +427,7 @@ body {
 }
 </style>
  <footer id="contact">
-        <p>Contact: x</p>
+        <p>Contact: </p>
         <p>ramin111azizi@email.com</p>
     </footer>
     <footer id="contact">
