@@ -428,10 +428,46 @@ body {
 </style>
 
     <footer id="contact">
-        <p>Contact: ramin111azizi@gmail.com</p>
-        <p>Contact: https://www.linkedin.com/in/raminazizy </p>
-        <p>© 2025 All rights reserved</p>
-    </footer>
+  <div class="social-links">
+   
+    <a href="https://www.linkedin.com/in/raminazizy/">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="mailto:ramib111azizi@email.com">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+  <p>© 2025 All rights reserved</p>
+</footer>
+
+<style>
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .social-links a {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    transition: transform 0.3s;
+  }
+
+  .social-links a:hover {
+    transform: translateY(-3px);
+  }
+
+  @media (max-width: 480px) {
+    .social-links {
+      gap: 1rem;
+    }
+    .social-links a {
+      font-size: 1.2rem;
+    }
+  }
+</style>
+
 
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
