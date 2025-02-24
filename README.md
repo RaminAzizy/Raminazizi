@@ -429,6 +429,8 @@ body {
 
     <footer id="contact">
   <div class="social-links">
+  <p>Contact: ramin111azizi@email.com</p>
+        
    
     <a href="https://www.linkedin.com/in/raminazizy/">
       <i class="fab fa-linkedin"></i>
